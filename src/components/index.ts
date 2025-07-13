@@ -1,4 +1,6 @@
 export { Hero } from './Hero'
 export { StarField } from './StarField'
 export { Typewriter } from './Typewriter'
-export { ThemeToggle } from './ThemeToggle' 
+export { ThemeToggle } from './ThemeToggle'
+export { About } from './About'
+export { Signature } from './Signature' 

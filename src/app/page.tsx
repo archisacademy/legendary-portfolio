@@ -1,11 +1,15 @@
 import Image from "next/image";
 import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
       <Hero />
+
+      {/* About Section */}
+      <About />
 
       {/* Demo Section */}
       <section className="py-16 bg-background">
