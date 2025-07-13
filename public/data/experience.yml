@@ -1,0 +1,114 @@
+timeline:
+  - id: 1
+    year: "2024"
+    title: "Senior Frontend Developer"
+    company: "TechCorp Solutions"
+    location: "San Francisco, CA"
+    duration: "Present"
+    description: "Leading frontend development for enterprise applications using React, TypeScript, and Next.js. Mentoring junior developers and implementing best practices."
+    technologies:
+      - "React"
+      - "TypeScript"
+      - "Next.js"
+      - "Tailwind CSS"
+      - "GraphQL"
+    achievements:
+      - "Reduced bundle size by 40% through code splitting and optimization"
+      - "Implemented design system used by 50+ developers"
+      - "Led migration from class to functional components"
+    type: "work"
+
+  - id: 2
+    year: "2023"
+    title: "Full Stack Developer"
+    company: "StartupHub Inc"
+    location: "New York, NY"
+    duration: "2 years"
+    description: "Built scalable web applications from concept to deployment. Worked closely with design and product teams to deliver exceptional user experiences."
+    technologies:
+      - "React"
+      - "Node.js"
+      - "PostgreSQL"
+      - "AWS"
+      - "Docker"
+    achievements:
+      - "Developed 3 major features that increased user engagement by 60%"
+      - "Optimized database queries reducing load times by 70%"
+      - "Implemented CI/CD pipeline reducing deployment time by 80%"
+    type: "work"
+
+  - id: 3
+    year: "2022"
+    title: "Frontend Developer"
+    company: "Digital Agency XYZ"
+    location: "Los Angeles, CA"
+    duration: "1.5 years"
+    description: "Created responsive and interactive websites for clients across various industries. Collaborated with designers to bring creative visions to life."
+    technologies:
+      - "JavaScript"
+      - "Vue.js"
+      - "CSS3"
+      - "Webpack"
+      - "Git"
+    achievements:
+      - "Delivered 15+ client projects on time and within budget"
+      - "Improved website performance scores by 30%"
+      - "Mentored 2 junior developers"
+    type: "work"
+
+  - id: 4
+    year: "2021"
+    title: "Computer Science Degree"
+    company: "University of Technology"
+    location: "Boston, MA"
+    duration: "4 years"
+    description: "Graduated with honors in Computer Science. Focused on web development, algorithms, and software engineering principles."
+    technologies:
+      - "Java"
+      - "Python"
+      - "C++"
+      - "Data Structures"
+      - "Algorithms"
+    achievements:
+      - "Graduated with 3.8 GPA"
+      - "Completed capstone project on AI-powered web applications"
+      - "President of Web Development Club"
+    type: "education"
+
+  - id: 5
+    year: "2020"
+    title: "Web Development Bootcamp"
+    company: "CodeAcademy"
+    location: "Online"
+    duration: "6 months"
+    description: "Intensive full-stack web development program covering modern technologies and best practices."
+    technologies:
+      - "HTML5"
+      - "CSS3"
+      - "JavaScript"
+      - "React"
+      - "Node.js"
+    achievements:
+      - "Completed 20+ projects"
+      - "Built portfolio website from scratch"
+      - "Learned modern development workflows"
+    type: "education"
+
+  - id: 6
+    year: "2019"
+    title: "Freelance Web Developer"
+    company: "Self-Employed"
+    location: "Remote"
+    duration: "1 year"
+    description: "Started my journey as a freelance web developer, working with small businesses and startups to build their online presence."
+    technologies:
+      - "HTML"
+      - "CSS"
+      - "JavaScript"
+      - "WordPress"
+      - "PHP"
+    achievements:
+      - "Completed 10+ client projects"
+      - "Built first e-commerce website"
+      - "Established professional network"
+    type: "work" 

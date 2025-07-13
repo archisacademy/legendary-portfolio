@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { SkillCloud } from "@/components/SkillCloud";
+import { Timeline } from "@/components/Timeline";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
 
       {/* Skills Section */}
       <SkillCloud />
+
+      {/* Timeline Section */}
+      <Timeline />
 
       {/* Demo Section */}
       <section className="py-16 bg-background">
