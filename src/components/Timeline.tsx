@@ -169,7 +169,7 @@ export function Timeline() {
 
   if (loading) {
     return (
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="animate-pulse">
             <div className="h-8 bg-muted rounded w-1/3 mb-4"></div>
@@ -195,7 +195,7 @@ export function Timeline() {
   if (!data) return null
 
   return (
-    <section className="py-20 bg-background" id="timeline">
+    <section className="py-20 bg-white dark:bg-gray-900" id="timeline">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -276,7 +276,7 @@ function TimelineEntry({ entry, index }: TimelineEntryProps) {
           delay: index * 0.2 + 0.3,
           ease: "easeOut"
         }}
-        className={`flex-1 bg-card border border-border rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 ${
+        className={`flex-1 bg-card border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 ${
           index % 2 === 0 ? 'ml-8' : 'mr-8'
         }`}
       >

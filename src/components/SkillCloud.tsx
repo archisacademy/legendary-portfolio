@@ -133,7 +133,7 @@ function FloatingBadge({ skill, position, onClose }: FloatingBadgeProps) {
         top: position.y,
       }}
     >
-      <div className="bg-card border border-border shadow-strong rounded-lg p-4 min-w-[200px]">
+      <div className="bg-card border border-gray-200 dark:border-gray-700 shadow-strong rounded-lg p-4 min-w-[200px]">
         <div className="flex items-center gap-3 mb-3">
           <div 
             className="w-8 h-8 rounded-lg flex items-center justify-center"
@@ -189,7 +189,7 @@ export function SkillCloud() {
   }
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -202,7 +202,7 @@ export function SkillCloud() {
 
         <div 
           ref={containerRef}
-          className="relative w-full h-[600px] overflow-hidden rounded-2xl bg-gradient-to-br from-primary-50/50 to-accent-50/50 border border-border"
+          className="relative w-full h-[600px] overflow-hidden rounded-2xl bg-gradient-to-br from-primary-50/50 to-accent-50/50 border border-gray-200 dark:border-gray-700"
         >
           {/* Skill Tags */}
           <div className="absolute inset-0">
