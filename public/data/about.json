@@ -1,0 +1,30 @@
+{
+  "tr": {
+    "title": "Hakkımda",
+    "subtitle": "Yaratıcı Geliştirici & Tasarımcı",
+    "bio": "Merhaba! Ben modern web teknolojileri konusunda tutkulu bir geliştiriciyim. React, Next.js ve Three.js gibi cutting-edge teknolojilerle dijital deneyimler yaratmaya odaklanıyorum. Her projede kullanıcı deneyimini ön planda tutarak, hem görsel olarak etkileyici hem de teknik olarak sağlam çözümler geliştiriyorum. Sürekli öğrenmeye ve yeni teknolojileri keşfetmeye inanıyorum.",
+    "skills": [
+      "Frontend Geliştirme",
+      "UI/UX Tasarım",
+      "3D Web Teknolojileri",
+      "Performans Optimizasyonu",
+      "Responsive Tasarım"
+    ],
+    "experience": "5+ yıl deneyim",
+    "location": "İstanbul, Türkiye"
+  },
+  "en": {
+    "title": "About Me",
+    "subtitle": "Creative Developer & Designer",
+    "bio": "Hello! I'm a passionate developer focused on modern web technologies. I specialize in creating digital experiences with cutting-edge technologies like React, Next.js, and Three.js. In every project, I prioritize user experience while developing solutions that are both visually impressive and technically robust. I believe in continuous learning and exploring new technologies.",
+    "skills": [
+      "Frontend Development",
+      "UI/UX Design", 
+      "3D Web Technologies",
+      "Performance Optimization",
+      "Responsive Design"
+    ],
+    "experience": "5+ years experience",
+    "location": "Istanbul, Turkey"
+  }
+} 
