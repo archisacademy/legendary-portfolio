@@ -165,7 +165,7 @@ export function EducationTimeline() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Education Journey
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -226,7 +226,7 @@ export function EducationTimeline() {
 
                     {/* Institution Info */}
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-foreground mb-1">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-1">
                         {entry.institution}
                       </h3>
                       <p className="text-lg font-semibold text-primary-500 mb-2">
@@ -250,14 +250,14 @@ export function EducationTimeline() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-foreground leading-relaxed">
+                                          <p className="text-gray-900 dark:text-gray-100 leading-relaxed">
                     {entry.description}
                   </p>
 
                   {/* Achievements */}
                   {entry.achievements && entry.achievements.length > 0 && (
                     <div>
-                      <h4 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
+                      <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2">
                         <Award className="w-4 h-4" />
                         Key Achievements
                       </h4>
@@ -285,7 +285,7 @@ export function EducationTimeline() {
                   {/* Technologies */}
                   {entry.technologies && entry.technologies.length > 0 && (
                     <div>
-                      <h4 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
+                      <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2">
                         <Code className="w-4 h-4" />
                         Technologies & Skills
                       </h4>

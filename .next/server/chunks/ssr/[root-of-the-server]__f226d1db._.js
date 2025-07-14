@@ -58,7 +58,7 @@ function StarField() {
             speeds
         ];
     }, []);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$three$2f$fiber$2f$dist$2f$events$2d$cf57b220$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__D__as__useFrame$3e$__["useFrame"])((state)=>{
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$react$2d$three$2f$fiber$2f$dist$2f$events$2d$cf57b220$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__D__as__useFrame$3e$__["useFrame"])(()=>{
         if (meshRef.current) {
             meshRef.current.rotation.y += 0.001;
             meshRef.current.rotation.x += 0.0005;
@@ -682,7 +682,7 @@ function About({ language: propLanguage }) {
                         className: "text-center mb-16",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-4xl md:text-5xl font-bold text-foreground mb-4",
+                                className: "text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4",
                                 children: data.title
                             }, void 0, false, {
                                 fileName: "[project]/src/components/About.tsx",
@@ -729,7 +729,7 @@ function About({ language: propLanguage }) {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "prose prose-lg max-w-none",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-lg leading-relaxed text-foreground",
+                                            className: "text-lg leading-relaxed text-gray-900 dark:text-gray-100",
                                             children: data.bio
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/About.tsx",
@@ -810,7 +810,7 @@ function About({ language: propLanguage }) {
                                 className: "space-y-6",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-semibold text-foreground mb-6",
+                                        className: "text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-6",
                                         children: "Skills & Expertise"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/About.tsx",
@@ -825,7 +825,7 @@ function About({ language: propLanguage }) {
                                                     className: "flex items-center justify-between",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-foreground font-medium",
+                                                            className: "text-gray-900 dark:text-gray-100 font-medium",
                                                             children: skill
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/About.tsx",
@@ -873,7 +873,7 @@ function About({ language: propLanguage }) {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>handleLanguageChange('tr'),
-                                                    className: `px-4 py-2 rounded-lg transition-colors ${language === 'tr' ? 'bg-primary-500 text-primary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`,
+                                                    className: `px-4 py-2 rounded-lg transition-colors ${language === 'tr' ? 'bg-primary-500 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'}`,
                                                     children: "TR"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/About.tsx",
@@ -882,7 +882,7 @@ function About({ language: propLanguage }) {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>handleLanguageChange('en'),
-                                                    className: `px-4 py-2 rounded-lg transition-colors ${language === 'en' ? 'bg-primary-500 text-primary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`,
+                                                    className: `px-4 py-2 rounded-lg transition-colors ${language === 'en' ? 'bg-primary-500 text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'}`,
                                                     children: "EN"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/About.tsx",
@@ -966,14 +966,14 @@ const Cube = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported_
                 d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 39,
+                lineNumber: 26,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                 points: "3.27,6.96 12,12.01 20.73,6.96"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 40,
+                lineNumber: 27,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -983,13 +983,13 @@ const Cube = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported_
                 y2: "12"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 41,
+                lineNumber: 28,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SkillCloud.tsx",
-        lineNumber: 38,
+        lineNumber: 25,
         columnNumber: 3
     }, this);
 const Server = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1008,7 +1008,7 @@ const Server = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__importe
                 ry: "2"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 47,
+                lineNumber: 34,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -1020,7 +1020,7 @@ const Server = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__importe
                 ry: "2"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 48,
+                lineNumber: 35,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1030,7 +1030,7 @@ const Server = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__importe
                 y2: "6"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 49,
+                lineNumber: 36,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1040,13 +1040,13 @@ const Server = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__importe
                 y2: "18"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 50,
+                lineNumber: 37,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SkillCloud.tsx",
-        lineNumber: 46,
+        lineNumber: 33,
         columnNumber: 3
     }, this);
 const Package = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1063,21 +1063,21 @@ const Package = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__import
                 y2: "4.24"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 56,
+                lineNumber: 43,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 57,
+                lineNumber: 44,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                 points: "3.27,6.96 12,12.01 20.73,6.96"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 58,
+                lineNumber: 45,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -1087,13 +1087,13 @@ const Package = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__import
                 y2: "12"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 59,
+                lineNumber: 46,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SkillCloud.tsx",
-        lineNumber: 55,
+        lineNumber: 42,
         columnNumber: 3
     }, this);
 const GitBranch = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1110,7 +1110,7 @@ const GitBranch = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__impo
                 y2: "15"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 65,
+                lineNumber: 52,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1119,7 +1119,7 @@ const GitBranch = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__impo
                 r: "3"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 66,
+                lineNumber: 53,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -1128,20 +1128,20 @@ const GitBranch = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__impo
                 r: "3"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 67,
+                lineNumber: 54,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M18 9a9 9 0 0 1-9 9"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 68,
+                lineNumber: 55,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SkillCloud.tsx",
-        lineNumber: 64,
+        lineNumber: 51,
         columnNumber: 3
     }, this);
 const TestTube = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1155,41 +1155,41 @@ const TestTube = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__impor
                 d: "M9 12l2 2 4-4"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 74,
+                lineNumber: 61,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 75,
+                lineNumber: 62,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 76,
+                lineNumber: 63,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12 3c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 77,
+                lineNumber: 64,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12 21c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 78,
+                lineNumber: 65,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SkillCloud.tsx",
-        lineNumber: 73,
+        lineNumber: 60,
         columnNumber: 3
     }, this);
 const Flame = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1203,41 +1203,41 @@ const Flame = ({ className, ...props })=>/*#__PURE__*/ (0, __TURBOPACK__imported
                 d: "M9 12l2 2 4-4"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 84,
+                lineNumber: 71,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 85,
+                lineNumber: 72,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 86,
+                lineNumber: 73,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12 3c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 87,
+                lineNumber: 74,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12 21c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z"
             }, void 0, false, {
                 fileName: "[project]/src/components/SkillCloud.tsx",
-                lineNumber: 88,
+                lineNumber: 75,
                 columnNumber: 5
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/SkillCloud.tsx",
-        lineNumber: 83,
+        lineNumber: 70,
         columnNumber: 3
     }, this);
 const skills = [
@@ -1382,7 +1382,7 @@ const skills = [
         category: 'Deployment'
     }
 ];
-function FloatingBadge({ skill, position, onClose }) {
+function FloatingBadge({ skill, position }) {
     const IconComponent = skill.icon;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
         initial: {
@@ -1427,22 +1427,22 @@ function FloatingBadge({ skill, position, onClose }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SkillCloud.tsx",
-                                lineNumber: 142,
+                                lineNumber: 128,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SkillCloud.tsx",
-                            lineNumber: 138,
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                    className: "font-semibold text-foreground",
+                                    className: "font-semibold text-gray-900 dark:text-gray-100",
                                     children: skill.name
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SkillCloud.tsx",
-                                    lineNumber: 148,
+                                    lineNumber: 134,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1450,19 +1450,19 @@ function FloatingBadge({ skill, position, onClose }) {
                                     children: skill.category
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SkillCloud.tsx",
-                                    lineNumber: 149,
+                                    lineNumber: 135,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SkillCloud.tsx",
-                            lineNumber: 147,
+                            lineNumber: 133,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SkillCloud.tsx",
-                    lineNumber: 137,
+                    lineNumber: 123,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1476,24 +1476,24 @@ function FloatingBadge({ skill, position, onClose }) {
                                     children: "Proficiency"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/SkillCloud.tsx",
-                                    lineNumber: 155,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "font-medium text-foreground",
+                                    className: "font-medium text-gray-900 dark:text-gray-100",
                                     children: [
                                         skill.level,
                                         "%"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/SkillCloud.tsx",
-                                    lineNumber: 156,
-                                    columnNumber: 13
+                                    lineNumber: 142,
+                                    columnNumber: 27
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/SkillCloud.tsx",
-                            lineNumber: 154,
+                            lineNumber: 140,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1515,29 +1515,29 @@ function FloatingBadge({ skill, position, onClose }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SkillCloud.tsx",
-                                lineNumber: 159,
+                                lineNumber: 145,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SkillCloud.tsx",
-                            lineNumber: 158,
+                            lineNumber: 144,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SkillCloud.tsx",
-                    lineNumber: 153,
+                    lineNumber: 139,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SkillCloud.tsx",
-            lineNumber: 136,
+            lineNumber: 122,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/SkillCloud.tsx",
-        lineNumber: 125,
+        lineNumber: 111,
         columnNumber: 5
     }, this);
 }
@@ -1568,11 +1568,11 @@ function SkillCloud() {
                     className: "text-center mb-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-4xl md:text-5xl font-bold text-foreground mb-4",
+                            className: "text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4",
                             children: "Skills & Technologies"
                         }, void 0, false, {
                             fileName: "[project]/src/components/SkillCloud.tsx",
-                            lineNumber: 195,
+                            lineNumber: 181,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1580,13 +1580,13 @@ function SkillCloud() {
                             children: "A comprehensive collection of technologies and tools I work with"
                         }, void 0, false, {
                             fileName: "[project]/src/components/SkillCloud.tsx",
-                            lineNumber: 198,
+                            lineNumber: 184,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SkillCloud.tsx",
-                    lineNumber: 194,
+                    lineNumber: 180,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1641,51 +1641,50 @@ function SkillCloud() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SkillCloud.tsx",
-                                                    lineNumber: 251,
+                                                    lineNumber: 237,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: skill.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/SkillCloud.tsx",
-                                                    lineNumber: 252,
+                                                    lineNumber: 238,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/SkillCloud.tsx",
-                                            lineNumber: 250,
+                                            lineNumber: 236,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SkillCloud.tsx",
-                                        lineNumber: 239,
+                                        lineNumber: 225,
                                         columnNumber: 19
                                     }, this)
                                 }, skill.name, false, {
                                     fileName: "[project]/src/components/SkillCloud.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 203,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/src/components/SkillCloud.tsx",
-                            lineNumber: 208,
+                            lineNumber: 194,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                             children: hoveredSkill && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FloatingBadge, {
                                 skill: hoveredSkill,
-                                position: badgePosition,
-                                onClose: ()=>setHoveredSkill(null)
+                                position: badgePosition
                             }, void 0, false, {
                                 fileName: "[project]/src/components/SkillCloud.tsx",
-                                lineNumber: 263,
+                                lineNumber: 249,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SkillCloud.tsx",
-                            lineNumber: 261,
+                            lineNumber: 247,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1711,12 +1710,12 @@ function SkillCloud() {
                                             className: "w-12 h-12 text-white"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/SkillCloud.tsx",
-                                            lineNumber: 280,
+                                            lineNumber: 265,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SkillCloud.tsx",
-                                        lineNumber: 274,
+                                        lineNumber: 259,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -1736,35 +1735,35 @@ function SkillCloud() {
                                         children: "Hover over skills to learn more"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/SkillCloud.tsx",
-                                        lineNumber: 282,
+                                        lineNumber: 267,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/SkillCloud.tsx",
-                                lineNumber: 273,
+                                lineNumber: 258,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/SkillCloud.tsx",
-                            lineNumber: 272,
+                            lineNumber: 257,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/SkillCloud.tsx",
-                    lineNumber: 203,
+                    lineNumber: 189,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/SkillCloud.tsx",
-            lineNumber: 193,
+            lineNumber: 179,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/SkillCloud.tsx",
-        lineNumber: 192,
+        lineNumber: 178,
         columnNumber: 5
     }, this);
 }
@@ -1855,7 +1854,7 @@ function Timeline() {
                 continue;
             }
             if (inTimeline && trimmed.startsWith('- id:')) {
-                if (currentEntry.id) {
+                if (currentEntry.id && currentEntry.year && currentEntry.title && currentEntry.company && currentEntry.location && currentEntry.duration && currentEntry.description && currentEntry.type && currentEntry.technologies && currentEntry.achievements) {
                     timeline.push(currentEntry);
                 }
                 currentEntry = {
@@ -1907,13 +1906,14 @@ function Timeline() {
                 continue;
             }
             if (inEntry && trimmed === '' && currentArrayKey) {
+                ;
                 currentEntry[currentArrayKey] = currentArray;
                 currentArray = [];
                 currentArrayKey = '';
                 continue;
             }
         }
-        if (currentEntry.id) {
+        if (currentEntry.id && currentEntry.year && currentEntry.title && currentEntry.company && currentEntry.location && currentEntry.duration && currentEntry.description && currentEntry.type && currentEntry.technologies && currentEntry.achievements) {
             timeline.push(currentEntry);
         }
         return {
@@ -1932,14 +1932,14 @@ function Timeline() {
                             className: "h-8 bg-muted rounded w-1/3 mb-4"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Timeline.tsx",
-                            lineNumber: 175,
+                            lineNumber: 174,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "h-4 bg-muted rounded w-1/2 mb-8"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Timeline.tsx",
-                            lineNumber: 176,
+                            lineNumber: 175,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1955,7 +1955,7 @@ function Timeline() {
                                             className: "w-24 h-24 bg-muted rounded-full"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 180,
+                                            lineNumber: 179,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1965,54 +1965,54 @@ function Timeline() {
                                                     className: "h-4 bg-muted rounded w-1/3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 182,
+                                                    lineNumber: 181,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "h-6 bg-muted rounded w-1/2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 183,
+                                                    lineNumber: 182,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "h-4 bg-muted rounded w-2/3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 184,
+                                                    lineNumber: 183,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 181,
+                                            lineNumber: 180,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/src/components/Timeline.tsx",
-                                    lineNumber: 179,
+                                    lineNumber: 178,
                                     columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/Timeline.tsx",
-                            lineNumber: 177,
+                            lineNumber: 176,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Timeline.tsx",
-                    lineNumber: 174,
+                    lineNumber: 173,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Timeline.tsx",
-                lineNumber: 173,
+                lineNumber: 172,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/Timeline.tsx",
-            lineNumber: 172,
+            lineNumber: 171,
             columnNumber: 7
         }, this);
     }
@@ -2027,11 +2027,11 @@ function Timeline() {
                     className: "text-center mb-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-4xl md:text-5xl font-bold text-foreground mb-4",
+                            className: "text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4",
                             children: "Experience & Education"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Timeline.tsx",
-                            lineNumber: 201,
+                            lineNumber: 200,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2039,13 +2039,13 @@ function Timeline() {
                             children: "My professional journey through the years"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Timeline.tsx",
-                            lineNumber: 204,
+                            lineNumber: 203,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Timeline.tsx",
-                    lineNumber: 200,
+                    lineNumber: 199,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2058,7 +2058,7 @@ function Timeline() {
                                 className: "absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 to-accent-500"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Timeline.tsx",
-                                lineNumber: 212,
+                                lineNumber: 211,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2068,34 +2068,34 @@ function Timeline() {
                                         index: index
                                     }, entry.id, false, {
                                         fileName: "[project]/src/components/Timeline.tsx",
-                                        lineNumber: 217,
+                                        lineNumber: 216,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Timeline.tsx",
-                                lineNumber: 215,
+                                lineNumber: 214,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Timeline.tsx",
-                        lineNumber: 210,
+                        lineNumber: 209,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/Timeline.tsx",
-                    lineNumber: 209,
+                    lineNumber: 208,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Timeline.tsx",
-            lineNumber: 199,
+            lineNumber: 198,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Timeline.tsx",
-        lineNumber: 198,
+        lineNumber: 197,
         columnNumber: 5
     }, this);
 }
@@ -2110,13 +2110,13 @@ function TimelineEntry({ entry, index }) {
             className: "w-6 h-6"
         }, void 0, false, {
             fileName: "[project]/src/components/Timeline.tsx",
-            lineNumber: 241,
+            lineNumber: 240,
             columnNumber: 30
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"], {
             className: "w-6 h-6"
         }, void 0, false, {
             fileName: "[project]/src/components/Timeline.tsx",
-            lineNumber: 241,
+            lineNumber: 240,
             columnNumber: 66
         }, this);
     };
@@ -2151,20 +2151,20 @@ function TimelineEntry({ entry, index }) {
                         children: getIcon(entry.type)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Timeline.tsx",
-                        lineNumber: 264,
+                        lineNumber: 263,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-8 left-8 w-0.5 h-8 bg-gradient-to-b from-primary-500 to-accent-500"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Timeline.tsx",
-                        lineNumber: 267,
+                        lineNumber: 266,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Timeline.tsx",
-                lineNumber: 263,
+                lineNumber: 262,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -2198,7 +2198,7 @@ function TimelineEntry({ entry, index }) {
                                             children: entry.year
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 287,
+                                            lineNumber: 286,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2206,22 +2206,22 @@ function TimelineEntry({ entry, index }) {
                                             children: entry.type === 'work' ? 'Work' : 'Education'
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 288,
+                                            lineNumber: 287,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Timeline.tsx",
-                                    lineNumber: 286,
+                                    lineNumber: 285,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-xl font-semibold text-foreground mb-1",
+                                    className: "text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1",
                                     children: entry.title
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Timeline.tsx",
-                                    lineNumber: 292,
-                                    columnNumber: 13
+                                    lineNumber: 291,
+                                    columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center gap-4 text-sm text-muted-foreground",
@@ -2233,20 +2233,20 @@ function TimelineEntry({ entry, index }) {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 297,
+                                                    lineNumber: 296,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: entry.company
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 298,
+                                                    lineNumber: 297,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 296,
+                                            lineNumber: 295,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2256,20 +2256,20 @@ function TimelineEntry({ entry, index }) {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 301,
+                                                    lineNumber: 300,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: entry.location
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 302,
+                                                    lineNumber: 301,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 300,
+                                            lineNumber: 299,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2279,65 +2279,65 @@ function TimelineEntry({ entry, index }) {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 305,
+                                                    lineNumber: 304,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: entry.duration
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Timeline.tsx",
-                                                    lineNumber: 306,
+                                                    lineNumber: 305,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/Timeline.tsx",
-                                            lineNumber: 304,
+                                            lineNumber: 303,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Timeline.tsx",
-                                    lineNumber: 295,
+                                    lineNumber: 294,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Timeline.tsx",
-                            lineNumber: 285,
+                            lineNumber: 284,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Timeline.tsx",
-                        lineNumber: 284,
+                        lineNumber: 283,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-foreground mb-6 leading-relaxed",
+                        className: "text-gray-900 dark:text-gray-100 mb-6 leading-relaxed",
                         children: entry.description
                     }, void 0, false, {
                         fileName: "[project]/src/components/Timeline.tsx",
-                        lineNumber: 313,
-                        columnNumber: 9
+                        lineNumber: 312,
+                        columnNumber: 23
                     }, this),
                     entry.technologies && entry.technologies.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                className: "text-sm font-semibold text-foreground mb-3 flex items-center gap-2",
+                                className: "text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__["Code"], {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Timeline.tsx",
-                                        lineNumber: 321,
+                                        lineNumber: 320,
                                         columnNumber: 15
                                     }, this),
                                     "Technologies"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Timeline.tsx",
-                                lineNumber: 320,
+                                lineNumber: 319,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2363,37 +2363,37 @@ function TimelineEntry({ entry, index }) {
                                         children: tech
                                     }, tech, false, {
                                         fileName: "[project]/src/components/Timeline.tsx",
-                                        lineNumber: 326,
+                                        lineNumber: 325,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Timeline.tsx",
-                                lineNumber: 324,
+                                lineNumber: 323,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Timeline.tsx",
-                        lineNumber: 319,
+                        lineNumber: 318,
                         columnNumber: 11
                     }, this),
                     entry.achievements && entry.achievements.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                className: "text-sm font-semibold text-foreground mb-3 flex items-center gap-2",
+                                className: "text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"], {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Timeline.tsx",
-                                        lineNumber: 348,
+                                        lineNumber: 347,
                                         columnNumber: 15
                                     }, this),
                                     "Key Achievements"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Timeline.tsx",
-                                lineNumber: 347,
+                                lineNumber: 346,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2421,43 +2421,43 @@ function TimelineEntry({ entry, index }) {
                                                 className: "w-1.5 h-1.5 rounded-full bg-accent-500 mt-2 flex-shrink-0"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Timeline.tsx",
-                                                lineNumber: 364,
+                                                lineNumber: 363,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: achievement
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Timeline.tsx",
-                                                lineNumber: 365,
+                                                lineNumber: 364,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, achievement, true, {
                                         fileName: "[project]/src/components/Timeline.tsx",
-                                        lineNumber: 353,
+                                        lineNumber: 352,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Timeline.tsx",
-                                lineNumber: 351,
+                                lineNumber: 350,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Timeline.tsx",
-                        lineNumber: 346,
+                        lineNumber: 345,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Timeline.tsx",
-                lineNumber: 271,
+                lineNumber: 270,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Timeline.tsx",
-        lineNumber: 249,
+        lineNumber: 248,
         columnNumber: 5
     }, this);
 }
@@ -2538,7 +2538,7 @@ function ProjectGallery() {
                 continue;
             }
             if (inProjects && trimmed.startsWith('- id:')) {
-                if (currentProject.id) {
+                if (currentProject.id && currentProject.title && currentProject.year && currentProject.stack && currentProject.description && currentProject.liveUrl && currentProject.repoUrl && currentProject.previewGif) {
                     projects.push(currentProject);
                 }
                 currentProject = {
@@ -2581,6 +2581,7 @@ function ProjectGallery() {
                 continue;
             }
             if (inProject && trimmed === '' && currentArrayKey) {
+                ;
                 currentProject[currentArrayKey] = currentArray;
                 currentArray = [];
                 currentArrayKey = '';
@@ -2591,7 +2592,7 @@ function ProjectGallery() {
         if (currentProject.id && !currentProject.stack) {
             currentProject.stack = [];
         }
-        if (currentProject.id) {
+        if (currentProject.id && currentProject.title && currentProject.year && currentProject.stack && currentProject.description && currentProject.liveUrl && currentProject.repoUrl && currentProject.previewGif) {
             projects.push(currentProject);
         }
         return {
@@ -2710,7 +2711,7 @@ function ProjectGallery() {
                     className: "text-center mb-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-4xl md:text-5xl font-bold text-foreground mb-4",
+                            className: "text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4",
                             children: "Featured Projects"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProjectGallery.tsx",
@@ -2800,7 +2801,7 @@ function ProjectGallery() {
                                                         whileTap: {
                                                             scale: 0.95
                                                         },
-                                                        className: "p-3 bg-white/90 backdrop-blur-sm rounded-full text-foreground hover:bg-white transition-colors",
+                                                        className: "p-3 bg-white/90 backdrop-blur-sm rounded-full text-gray-900 dark:text-gray-100 hover:bg-white transition-colors",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
@@ -2823,7 +2824,7 @@ function ProjectGallery() {
                                                         whileTap: {
                                                             scale: 0.95
                                                         },
-                                                        className: "p-3 bg-white/90 backdrop-blur-sm rounded-full text-foreground hover:bg-white transition-colors",
+                                                        className: "p-3 bg-white/90 backdrop-blur-sm rounded-full text-gray-900 dark:text-gray-100 hover:bg-white transition-colors",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__["Github"], {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
@@ -2862,7 +2863,7 @@ function ProjectGallery() {
                                                 className: "flex-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "text-xl font-semibold text-foreground mb-2",
+                                                        className: "text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2",
                                                         children: project.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ProjectGallery.tsx",
@@ -2985,7 +2986,7 @@ function ProjectGallery() {
                                                     whileTap: {
                                                         scale: 0.95
                                                     },
-                                                    className: "flex items-center gap-2 px-4 py-2 bg-muted text-foreground rounded-lg text-sm font-medium hover:bg-muted/80 transition-colors",
+                                                    className: "flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$github$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Github$3e$__["Github"], {
                                                             className: "w-4 h-4"
@@ -3297,7 +3298,7 @@ function EducationTimeline() {
                     className: "text-center mb-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-4xl md:text-5xl font-bold text-foreground mb-4",
+                            className: "text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4",
                             children: "Education Journey"
                         }, void 0, false, {
                             fileName: "[project]/src/components/EducationTimeline.tsx",
@@ -3404,7 +3405,7 @@ function EducationTimeline() {
                                                     className: "flex-1",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-xl font-bold text-foreground mb-1",
+                                                            className: "text-xl font-bold text-gray-900 dark:text-gray-100 mb-1",
                                                             children: entry.institution
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/EducationTimeline.tsx",
@@ -3510,17 +3511,17 @@ function EducationTimeline() {
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-foreground leading-relaxed",
+                                            className: "text-gray-900 dark:text-gray-100 leading-relaxed",
                                             children: entry.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/EducationTimeline.tsx",
                                             lineNumber: 253,
-                                            columnNumber: 19
+                                            columnNumber: 43
                                         }, this),
                                         entry.achievements && entry.achievements.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    className: "text-sm font-semibold text-foreground mb-3 flex items-center gap-2",
+                                                    className: "text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"], {
                                                             className: "w-4 h-4"
@@ -3591,7 +3592,7 @@ function EducationTimeline() {
                                         entry.technologies && entry.technologies.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                    className: "text-sm font-semibold text-foreground mb-3 flex items-center gap-2",
+                                                    className: "text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__["Code"], {
                                                             className: "w-4 h-4"
@@ -3767,7 +3768,7 @@ function Contact() {
                 body: JSON.stringify(formData)
             });
             if (response.ok) {
-                addToast('success', 'Message sent successfully! I\'ll get back to you soon.');
+                addToast('success', 'Message sent successfully! I&apos;ll get back to you soon.');
                 setFormData({
                     name: '',
                     email: '',
@@ -3778,7 +3779,7 @@ function Contact() {
             } else {
                 addToast('error', 'Failed to send message. Please try again.');
             }
-        } catch (error) {
+        } catch  {
             addToast('error', 'Network error. Please check your connection and try again.');
         } finally{
             setIsSubmitting(false);
@@ -3835,7 +3836,7 @@ function Contact() {
                         className: "text-center mb-16",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-4xl md:text-5xl font-bold text-foreground mb-4",
+                                className: "text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4",
                                 children: "Get In Touch"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Contact.tsx",
@@ -3876,7 +3877,7 @@ function Contact() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "text-2xl font-semibold text-foreground mb-6",
+                                                className: "text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-6",
                                                 children: "Let's Connect"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
@@ -3889,7 +3890,7 @@ function Contact() {
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
                                                 lineNumber: 173,
-                                                columnNumber: 15
+                                                columnNumber: 25
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -3932,7 +3933,7 @@ function Contact() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "font-medium text-foreground",
+                                                                className: "font-medium text-gray-900 dark:text-gray-100",
                                                                 children: "Email"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Contact.tsx",
@@ -3991,7 +3992,7 @@ function Contact() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "font-medium text-foreground",
+                                                                className: "font-medium text-gray-900 dark:text-gray-100",
                                                                 children: "Phone"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Contact.tsx",
@@ -4050,7 +4051,7 @@ function Contact() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "font-medium text-foreground",
+                                                                className: "font-medium text-gray-900 dark:text-gray-100",
                                                                 children: "Location"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Contact.tsx",
@@ -4086,7 +4087,7 @@ function Contact() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                                className: "text-lg font-semibold text-foreground mb-4",
+                                                className: "text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4",
                                                 children: "Follow Me"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
@@ -4128,7 +4129,7 @@ function Contact() {
                                                         whileTap: {
                                                             scale: 0.95
                                                         },
-                                                        className: `p-3 rounded-full bg-muted text-muted-foreground transition-all duration-300 ${social.color}`,
+                                                        className: `p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 transition-all duration-300 ${social.color}`,
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(social.icon, {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
@@ -4183,7 +4184,7 @@ function Contact() {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                             htmlFor: "name",
-                                                            className: "block text-sm font-medium text-foreground mb-2",
+                                                            className: "block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2",
                                                             children: "Name *"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Contact.tsx",
@@ -4221,7 +4222,7 @@ function Contact() {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                             htmlFor: "email",
-                                                            className: "block text-sm font-medium text-foreground mb-2",
+                                                            className: "block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2",
                                                             children: "Email *"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Contact.tsx",
@@ -4234,7 +4235,7 @@ function Contact() {
                                                             name: "email",
                                                             value: formData.email,
                                                             onChange: handleInputChange,
-                                                            className: `w-full px-4 py-3 rounded-lg border transition-colors ${errors.email ? 'border-red-500 focus:border-red-500' : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'} bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20`,
+                                                            className: `w-full px-4 py-3 rounded-lg border transition-colors ${errors.email ? 'border-red-500 focus:border-red-500' : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20`,
                                                             placeholder: "your@email.com"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Contact.tsx",
@@ -4265,7 +4266,7 @@ function Contact() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     htmlFor: "subject",
-                                                    className: "block text-sm font-medium text-foreground mb-2",
+                                                    className: "block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2",
                                                     children: "Subject *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Contact.tsx",
@@ -4278,7 +4279,7 @@ function Contact() {
                                                     name: "subject",
                                                     value: formData.subject,
                                                     onChange: handleInputChange,
-                                                    className: `w-full px-4 py-3 rounded-lg border transition-colors ${errors.subject ? 'border-red-500 focus:border-red-500' : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'} bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20`,
+                                                    className: `w-full px-4 py-3 rounded-lg border transition-colors ${errors.subject ? 'border-red-500 focus:border-red-500' : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20`,
                                                     placeholder: "What's this about?"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Contact.tsx",
@@ -4303,7 +4304,7 @@ function Contact() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                     htmlFor: "message",
-                                                    className: "block text-sm font-medium text-foreground mb-2",
+                                                    className: "block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2",
                                                     children: "Message *"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Contact.tsx",
@@ -4316,7 +4317,7 @@ function Contact() {
                                                     value: formData.message,
                                                     onChange: handleInputChange,
                                                     rows: 6,
-                                                    className: `w-full px-4 py-3 rounded-lg border transition-colors ${errors.message ? 'border-red-500 focus:border-red-500' : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'} bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20 resize-none`,
+                                                    className: `w-full px-4 py-3 rounded-lg border transition-colors ${errors.message ? 'border-red-500 focus:border-red-500' : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20 resize-none`,
                                                     placeholder: "Tell me about your project..."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Contact.tsx",

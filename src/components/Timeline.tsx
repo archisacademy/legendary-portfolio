@@ -9,8 +9,7 @@ import {
   Calendar,
   Award,
   Code,
-  Building,
-  Globe
+  Building
 } from 'lucide-react'
 
 interface TimelineEntry {
@@ -77,7 +76,7 @@ export function Timeline() {
     // This is a simplified parser - in production, use js-yaml
     const timeline: TimelineEntry[] = []
     const lines = yamlText.split('\n')
-    let currentEntry: any = {}
+    let currentEntry: Partial<TimelineEntry> = {}
     let inTimeline = false
     let inEntry = false
     let currentArray: string[] = []
@@ -92,8 +91,8 @@ export function Timeline() {
       }
 
       if (inTimeline && trimmed.startsWith('- id:')) {
-        if (currentEntry.id) {
-          timeline.push(currentEntry)
+        if (currentEntry.id && currentEntry.year && currentEntry.title && currentEntry.company && currentEntry.location && currentEntry.duration && currentEntry.description && currentEntry.type && currentEntry.technologies && currentEntry.achievements) {
+          timeline.push(currentEntry as TimelineEntry)
         }
         currentEntry = { id: parseInt(trimmed.split(':')[1].trim()) }
         inEntry = true
@@ -153,15 +152,15 @@ export function Timeline() {
       }
 
       if (inEntry && trimmed === '' && currentArrayKey) {
-        currentEntry[currentArrayKey] = currentArray
+        ;(currentEntry as any)[currentArrayKey] = currentArray
         currentArray = []
         currentArrayKey = ''
         continue
       }
     }
 
-    if (currentEntry.id) {
-      timeline.push(currentEntry)
+    if (currentEntry.id && currentEntry.year && currentEntry.title && currentEntry.company && currentEntry.location && currentEntry.duration && currentEntry.description && currentEntry.type && currentEntry.technologies && currentEntry.achievements) {
+      timeline.push(currentEntry as TimelineEntry)
     }
 
     return { timeline }
@@ -198,7 +197,7 @@ export function Timeline() {
     <section className="py-20 bg-white dark:bg-gray-900" id="timeline">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Experience & Education
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -289,7 +288,7 @@ function TimelineEntry({ entry, index }: TimelineEntryProps) {
                 {entry.type === 'work' ? 'Work' : 'Education'}
               </span>
             </div>
-            <h3 className="text-xl font-semibold text-foreground mb-1">
+                            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">
               {entry.title}
             </h3>
             <div className="flex items-center gap-4 text-sm text-muted-foreground">
@@ -310,14 +309,14 @@ function TimelineEntry({ entry, index }: TimelineEntryProps) {
         </div>
 
         {/* Description */}
-        <p className="text-foreground mb-6 leading-relaxed">
+                      <p className="text-gray-900 dark:text-gray-100 mb-6 leading-relaxed">
           {entry.description}
         </p>
 
         {/* Technologies */}
         {entry.technologies && entry.technologies.length > 0 && (
           <div className="mb-6">
-            <h4 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
+            <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2">
               <Code className="w-4 h-4" />
               Technologies
             </h4>
@@ -344,7 +343,7 @@ function TimelineEntry({ entry, index }: TimelineEntryProps) {
         {/* Achievements */}
         {entry.achievements && entry.achievements.length > 0 && (
           <div>
-            <h4 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
+            <h4 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3 flex items-center gap-2">
               <Award className="w-4 h-4" />
               Key Achievements
             </h4>

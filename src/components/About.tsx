@@ -88,7 +88,7 @@ export function About({ language: propLanguage }: AboutProps) {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
               {data.title}
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
@@ -111,7 +111,7 @@ export function About({ language: propLanguage }: AboutProps) {
             {/* Bio Section */}
             <div className="space-y-6">
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg leading-relaxed text-foreground">
+                <p className="text-lg leading-relaxed text-gray-900 dark:text-gray-100">
                   {data.bio}
                 </p>
               </div>
@@ -139,7 +139,7 @@ export function About({ language: propLanguage }: AboutProps) {
 
             {/* Skills Section */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-foreground mb-6">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-6">
                 Skills & Expertise
               </h3>
               
@@ -150,7 +150,7 @@ export function About({ language: propLanguage }: AboutProps) {
                     className="group p-4 rounded-lg bg-card border border-gray-200 dark:border-gray-700 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105"
                   >
                     <div className="flex items-center justify-between">
-                      <span className="text-foreground font-medium">
+                      <span className="text-gray-900 dark:text-gray-100 font-medium">
                         {skill}
                       </span>
                       <div className="w-16 h-2 bg-muted rounded-full overflow-hidden">
@@ -174,8 +174,8 @@ export function About({ language: propLanguage }: AboutProps) {
                     onClick={() => handleLanguageChange('tr')}
                     className={`px-4 py-2 rounded-lg transition-colors ${
                       language === 'tr' 
-                        ? 'bg-primary-500 text-primary-foreground' 
-                        : 'bg-muted text-muted-foreground hover:text-foreground'
+                        ? 'bg-primary-500 text-white' 
+                        : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'
                     }`}
                   >
                     TR
@@ -184,8 +184,8 @@ export function About({ language: propLanguage }: AboutProps) {
                     onClick={() => handleLanguageChange('en')}
                     className={`px-4 py-2 rounded-lg transition-colors ${
                       language === 'en' 
-                        ? 'bg-primary-500 text-primary-foreground' 
-                        : 'bg-muted text-muted-foreground hover:text-foreground'
+                        ? 'bg-primary-500 text-white' 
+                        : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100'
                     }`}
                   >
                     EN

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { ExternalLink, Github, Calendar, Code } from 'lucide-react'
 import Masonry from 'react-masonry-css'
@@ -61,7 +61,7 @@ export function ProjectGallery() {
   const parseYAML = (yamlText: string): ProjectData => {
     const projects: Project[] = []
     const lines = yamlText.split('\n')
-    let currentProject: any = {}
+    let currentProject: Partial<Project> = {}
     let inProjects = false
     let inProject = false
     let currentArray: string[] = []
@@ -76,8 +76,8 @@ export function ProjectGallery() {
       }
 
       if (inProjects && trimmed.startsWith('- id:')) {
-        if (currentProject.id) {
-          projects.push(currentProject)
+        if (currentProject.id && currentProject.title && currentProject.year && currentProject.stack && currentProject.description && currentProject.liveUrl && currentProject.repoUrl && currentProject.previewGif) {
+          projects.push(currentProject as Project)
         }
         currentProject = { id: parseInt(trimmed.split(':')[1].trim()) }
         inProject = true
@@ -126,7 +126,7 @@ export function ProjectGallery() {
       }
 
       if (inProject && trimmed === '' && currentArrayKey) {
-        currentProject[currentArrayKey] = currentArray
+        ;(currentProject as any)[currentArrayKey] = currentArray
         currentArray = []
         currentArrayKey = ''
         continue
@@ -138,8 +138,8 @@ export function ProjectGallery() {
       currentProject.stack = []
     }
 
-    if (currentProject.id) {
-      projects.push(currentProject)
+    if (currentProject.id && currentProject.title && currentProject.year && currentProject.stack && currentProject.description && currentProject.liveUrl && currentProject.repoUrl && currentProject.previewGif) {
+      projects.push(currentProject as Project)
     }
 
     return { projects }
@@ -186,7 +186,7 @@ export function ProjectGallery() {
     <section className="py-20 bg-white dark:bg-gray-900" id="projects">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -241,7 +241,7 @@ export function ProjectGallery() {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
-                      className="p-3 bg-white/90 backdrop-blur-sm rounded-full text-foreground hover:bg-white transition-colors"
+                      className="p-3 bg-white/90 backdrop-blur-sm rounded-full text-gray-900 dark:text-gray-100 hover:bg-white transition-colors"
                     >
                       <ExternalLink className="w-5 h-5" />
                     </motion.a>
@@ -251,7 +251,7 @@ export function ProjectGallery() {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
-                      className="p-3 bg-white/90 backdrop-blur-sm rounded-full text-foreground hover:bg-white transition-colors"
+                      className="p-3 bg-white/90 backdrop-blur-sm rounded-full text-gray-900 dark:text-gray-100 hover:bg-white transition-colors"
                     >
                       <Github className="w-5 h-5" />
                     </motion.a>
@@ -264,7 +264,7 @@ export function ProjectGallery() {
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
                       {project.title}
                     </h3>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -319,7 +319,7 @@ export function ProjectGallery() {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 px-4 py-2 bg-muted text-foreground rounded-lg text-sm font-medium hover:bg-muted/80 transition-colors"
+                    className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                   >
                     <Github className="w-4 h-4" />
                     GitHub ↗

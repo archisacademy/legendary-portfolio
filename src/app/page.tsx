@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { SkillCloud } from "@/components/SkillCloud";
@@ -7,9 +8,43 @@ import { ProjectGallery } from "@/components/ProjectGallery";
 import { EducationTimeline } from "@/components/EducationTimeline";
 import { Contact } from "@/components/Contact";
 
+export const generateMetadata = (): Metadata => {
+  const siteUrl = process.env.SITE_URL || 'https://legendary-portfolio.vercel.app';
+  
+  return {
+    title: "Home",
+    description: "Full Stack Developer specializing in React, Next.js, and modern web technologies. View my projects and get in touch!",
+    alternates: {
+      canonical: `${siteUrl}/`,
+    },
+    openGraph: {
+      title: "Legendary Portfolio - Full Stack Developer",
+      description: "Full Stack Developer specializing in React, Next.js, and modern web technologies. View my projects and get in touch!",
+      url: `${siteUrl}/`,
+      siteName: "Legendary Portfolio",
+              images: [
+          {
+            url: `${siteUrl}/og-image.svg`,
+            width: 1200,
+            height: 630,
+            alt: "Legendary Portfolio - Full Stack Developer",
+          },
+        ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Legendary Portfolio - Full Stack Developer",
+      description: "Full Stack Developer specializing in React, Next.js, and modern web technologies. View my projects and get in touch!",
+      images: [`${siteUrl}/og-image.svg`],
+    },
+  };
+};
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-foreground">
+          <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       {/* Hero Section */}
       <Hero />
 
@@ -34,7 +69,7 @@ export default function Home() {
       {/* Demo Section */}
       <section className="py-16 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-foreground">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-gray-100">
             Design System Demo
           </h2>
 
@@ -120,7 +155,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex gap-6 items-center justify-center flex-wrap">
             <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
               href="https://nextjs.org/learn"
               target="_blank"
               rel="noopener noreferrer"
@@ -135,7 +170,7 @@ export default function Home() {
               Learn
             </a>
             <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
               href="https://vercel.com/templates"
               target="_blank"
               rel="noopener noreferrer"
@@ -150,7 +185,7 @@ export default function Home() {
               Examples
             </a>
             <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-muted-foreground hover:text-foreground transition-colors"
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
               href="https://nextjs.org"
               target="_blank"
               rel="noopener noreferrer"

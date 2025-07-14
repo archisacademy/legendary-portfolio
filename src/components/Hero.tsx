@@ -37,7 +37,7 @@ export function Hero() {
         <div className="text-center space-y-8 px-4 max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            <span className="block">I'm a</span>
+            <span className="block">I&apos;m a</span>
             <span className="block bg-gradient-to-r from-primary-400 to-accent-500 bg-clip-text text-transparent">
               <Typewriter 
                 strings={typewriterStrings}
@@ -51,7 +51,7 @@ export function Hero() {
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
             Crafting digital experiences with code, creativity, and cutting-edge technology.
-            Let's build something legendary together.
+            Let&apos;s build something legendary together.
           </p>
 
           {/* CTA Button */}

@@ -96,13 +96,13 @@ export function Contact() {
       })
 
       if (response.ok) {
-        addToast('success', 'Message sent successfully! I\'ll get back to you soon.')
+        addToast('success', 'Message sent successfully! I&apos;ll get back to you soon.')
         setFormData({ name: '', email: '', subject: '', message: '' })
         setErrors({})
       } else {
         addToast('error', 'Failed to send message. Please try again.')
       }
-    } catch (error) {
+    } catch {
       addToast('error', 'Network error. Please check your connection and try again.')
     } finally {
       setIsSubmitting(false)
@@ -150,11 +150,11 @@ export function Contact() {
     <section className="py-20 bg-white dark:bg-gray-900" id="contact">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Get In Touch
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Let's work together! I'm always open to discussing new opportunities and exciting projects.
+            Let&apos;s work together! I&apos;m always open to discussing new opportunities and exciting projects.
           </p>
         </div>
 
@@ -167,13 +167,13 @@ export function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold text-foreground mb-6">
-                Let's Connect
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-6">
+                Let&apos;s Connect
               </h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm passionate about creating innovative solutions and would love to hear about your project. 
-                Whether you have a question or just want to say hi, I'll try my best to get back to you!
-              </p>
+                        <p className="text-muted-foreground mb-8 leading-relaxed">
+            I&apos;m passionate about creating innovative solutions and would love to hear about your project. 
+            Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+          </p>
             </div>
 
             {/* Contact Details */}
@@ -188,7 +188,7 @@ export function Contact() {
                   <Mail className="w-6 h-6 text-primary-600 dark:text-primary-400" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Email</p>
+                  <p className="font-medium text-gray-900 dark:text-gray-100">Email</p>
                   <p className="text-muted-foreground">hello@example.com</p>
                 </div>
               </motion.div>
@@ -203,7 +203,7 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-accent-600 dark:text-accent-400" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Phone</p>
+                  <p className="font-medium text-gray-900 dark:text-gray-100">Phone</p>
                   <p className="text-muted-foreground">+1 (555) 123-4567</p>
                 </div>
               </motion.div>
@@ -218,7 +218,7 @@ export function Contact() {
                   <MapPin className="w-6 h-6 text-green-600 dark:text-green-400" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Location</p>
+                  <p className="font-medium text-gray-900 dark:text-gray-100">Location</p>
                   <p className="text-muted-foreground">San Francisco, CA</p>
                 </div>
               </motion.div>
@@ -226,7 +226,7 @@ export function Contact() {
 
             {/* Social Links */}
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-4">Follow Me</h4>
+              <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
@@ -248,7 +248,7 @@ export function Contact() {
                       transition: { duration: 0.3 }
                     }}
                     whileTap={{ scale: 0.95 }}
-                    className={`p-3 rounded-full bg-muted text-muted-foreground transition-all duration-300 ${social.color}`}
+                    className={`p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 transition-all duration-300 ${social.color}`}
                   >
                     <social.icon className="w-5 h-5" />
                   </motion.a>
@@ -267,7 +267,7 @@ export function Contact() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
                     Name *
                   </label>
                   <input
@@ -289,7 +289,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
                     Email *
                   </label>
                   <input
@@ -302,7 +302,7 @@ export function Contact() {
                       errors.email 
                         ? 'border-red-500 focus:border-red-500' 
                         : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
-                    } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
+                    } bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
                     placeholder="your@email.com"
                   />
                   {errors.email && (
@@ -312,7 +312,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
                   Subject *
                 </label>
                 <input
@@ -325,8 +325,8 @@ export function Contact() {
                     errors.subject 
                       ? 'border-red-500 focus:border-red-500' 
                       : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
-                  } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
-                  placeholder="What's this about?"
+                  } bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
+                  placeholder="What&apos;s this about?"
                 />
                 {errors.subject && (
                   <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
@@ -334,7 +334,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
                   Message *
                 </label>
                 <textarea
@@ -347,7 +347,7 @@ export function Contact() {
                     errors.message 
                       ? 'border-red-500 focus:border-red-500' 
                       : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
-                  } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20 resize-none`}
+                  } bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20 resize-none`}
                   placeholder="Tell me about your project..."
                 />
                 {errors.message && (

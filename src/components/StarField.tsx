@@ -47,7 +47,7 @@ export function StarField() {
     return [positions, sizes, speeds]
   }, [])
   
-  useFrame((state) => {
+  useFrame(() => {
     if (meshRef.current) {
       meshRef.current.rotation.y += 0.001
       meshRef.current.rotation.x += 0.0005

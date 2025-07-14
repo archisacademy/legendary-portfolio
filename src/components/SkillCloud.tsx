@@ -1,28 +1,15 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
   Code, 
   Palette, 
-  Smartphone, 
   Globe, 
   Database, 
   Zap, 
-  Shield, 
   Layers,
-  Cpu,
-  Wifi,
-  Cloud,
-  Lock,
-  Eye,
-  Heart,
-  Star,
-  Target,
-  Rocket,
-  Sparkles,
-  TrendingUp,
-  Users
+  Cloud
 } from 'lucide-react'
 
 interface Skill {
@@ -115,10 +102,9 @@ const skills: Skill[] = [
 interface FloatingBadgeProps {
   skill: Skill
   position: { x: number; y: number }
-  onClose: () => void
 }
 
-function FloatingBadge({ skill, position, onClose }: FloatingBadgeProps) {
+function FloatingBadge({ skill, position }: FloatingBadgeProps) {
   const IconComponent = skill.icon
 
   return (
@@ -145,7 +131,7 @@ function FloatingBadge({ skill, position, onClose }: FloatingBadgeProps) {
             />
           </div>
           <div>
-            <h4 className="font-semibold text-foreground">{skill.name}</h4>
+            <h4 className="font-semibold text-gray-900 dark:text-gray-100">{skill.name}</h4>
             <p className="text-sm text-muted-foreground">{skill.category}</p>
           </div>
         </div>
@@ -153,7 +139,7 @@ function FloatingBadge({ skill, position, onClose }: FloatingBadgeProps) {
         <div className="space-y-2">
           <div className="flex justify-between text-sm">
             <span className="text-muted-foreground">Proficiency</span>
-            <span className="font-medium text-foreground">{skill.level}%</span>
+                          <span className="font-medium text-gray-900 dark:text-gray-100">{skill.level}%</span>
           </div>
           <div className="w-full bg-muted rounded-full h-2">
             <motion.div
@@ -192,7 +178,7 @@ export function SkillCloud() {
     <section className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             Skills & Technologies
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -263,7 +249,6 @@ export function SkillCloud() {
               <FloatingBadge
                 skill={hoveredSkill}
                 position={badgePosition}
-                onClose={() => setHoveredSkill(null)}
               />
             )}
           </AnimatePresence>
