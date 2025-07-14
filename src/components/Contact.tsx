@@ -218,7 +218,7 @@ export function Contact() {
                   <MapPin className="w-6 h-6 text-green-600 dark:text-green-400" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Location</p>
+                  <p className="font-medium text-gray-900 dark:text-gray-100">Location</p>
                   <p className="text-muted-foreground">San Francisco, CA</p>
                 </div>
               </motion.div>
@@ -226,7 +226,7 @@ export function Contact() {
 
             {/* Social Links */}
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-4">Follow Me</h4>
+              <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
@@ -248,7 +248,7 @@ export function Contact() {
                       transition: { duration: 0.3 }
                     }}
                     whileTap={{ scale: 0.95 }}
-                    className={`p-3 rounded-full bg-muted text-muted-foreground transition-all duration-300 ${social.color}`}
+                    className={`p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 transition-all duration-300 ${social.color}`}
                   >
                     <social.icon className="w-5 h-5" />
                   </motion.a>
@@ -267,7 +267,7 @@ export function Contact() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
                     Name *
                   </label>
                   <input
@@ -280,7 +280,7 @@ export function Contact() {
                       errors.name 
                         ? 'border-red-500 focus:border-red-500' 
                         : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
-                    } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
+                    } bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
                     placeholder="Your name"
                   />
                   {errors.name && (
@@ -289,7 +289,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
                     Email *
                   </label>
                   <input
@@ -302,7 +302,7 @@ export function Contact() {
                       errors.email 
                         ? 'border-red-500 focus:border-red-500' 
                         : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
-                    } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
+                    } bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
                     placeholder="your@email.com"
                   />
                   {errors.email && (
@@ -312,7 +312,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
                   Subject *
                 </label>
                 <input
@@ -325,7 +325,7 @@ export function Contact() {
                     errors.subject 
                       ? 'border-red-500 focus:border-red-500' 
                       : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
-                  } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
+                  } bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20`}
                   placeholder="What's this about?"
                 />
                 {errors.subject && (
@@ -334,7 +334,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
                   Message *
                 </label>
                 <textarea
@@ -347,7 +347,7 @@ export function Contact() {
                     errors.message 
                       ? 'border-red-500 focus:border-red-500' 
                       : 'border-gray-300 dark:border-gray-600 focus:border-primary-500'
-                  } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-500/20 resize-none`}
+                  } bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500/20 resize-none`}
                   placeholder="Tell me about your project..."
                 />
                 {errors.message && (
