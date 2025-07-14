@@ -5,6 +5,7 @@ import { SkillCloud } from "@/components/SkillCloud";
 import { Timeline } from "@/components/Timeline";
 import { ProjectGallery } from "@/components/ProjectGallery";
 import { EducationTimeline } from "@/components/EducationTimeline";
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
 
       {/* Projects Section */}
       <ProjectGallery />
+
+      {/* Contact Section */}
+      <Contact />
 
       {/* Demo Section */}
       <section className="py-16 bg-white dark:bg-gray-900">
