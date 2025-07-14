@@ -1,0 +1,61 @@
+education:
+  - id: 1
+    degree: "Master of Science in Computer Science"
+    institution: "Stanford University"
+    year: "2022-2024"
+    location: "Stanford, CA"
+    description: "Specialized in Artificial Intelligence and Machine Learning. Completed thesis on 'Advanced Neural Network Architectures for Computer Vision' with distinction."
+    logo: "/logos/stanford.svg"
+    gpa: "3.9/4.0"
+    achievements:
+      - "Graduate Teaching Assistant for CS229: Machine Learning"
+      - "Published 3 papers in top-tier conferences"
+      - "Led AI research group with 15+ members"
+    technologies:
+      - "Python"
+      - "TensorFlow"
+      - "PyTorch"
+      - "CUDA"
+      - "Docker"
+      - "AWS"
+
+  - id: 2
+    degree: "Bachelor of Science in Computer Engineering"
+    institution: "MIT"
+    year: "2018-2022"
+    location: "Cambridge, MA"
+    description: "Focused on software engineering and systems design. Graduated with honors and completed capstone project on distributed systems."
+    logo: "/logos/mit.svg"
+    gpa: "3.8/4.0"
+    achievements:
+      - "Dean's List all semesters"
+      - "President of Computer Science Club"
+      - "Internship at Google (Summer 2021)"
+      - "Best Senior Project Award"
+    technologies:
+      - "C++"
+      - "Java"
+      - "JavaScript"
+      - "React"
+      - "Node.js"
+      - "PostgreSQL"
+
+  - id: 3
+    degree: "High School Diploma"
+    institution: "St. Paul's School"
+    year: "2014-2018"
+    location: "Concord, NH"
+    description: "Specialized in Mathematics and Sciences. Led robotics team to national championships and founded coding club."
+    logo: "/logos/stpauls.svg"
+    gpa: "4.0/4.0"
+    achievements:
+      - "Valedictorian"
+      - "National Merit Scholar"
+      - "Robotics Team Captain"
+      - "Founded Coding Club"
+      - "AP Scholar with Distinction"
+    technologies:
+      - "Python"
+      - "Arduino"
+      - "HTML/CSS"
+      - "JavaScript" 
