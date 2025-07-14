@@ -4,6 +4,7 @@ import { About } from "@/components/About";
 import { SkillCloud } from "@/components/SkillCloud";
 import { Timeline } from "@/components/Timeline";
 import { ProjectGallery } from "@/components/ProjectGallery";
+import { EducationTimeline } from "@/components/EducationTimeline";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
 
       {/* Timeline Section */}
       <Timeline />
+
+      {/* Education Section */}
+      <EducationTimeline />
 
       {/* Projects Section */}
       <ProjectGallery />

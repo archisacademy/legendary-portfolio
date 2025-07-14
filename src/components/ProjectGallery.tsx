@@ -133,6 +133,11 @@ export function ProjectGallery() {
       }
     }
 
+    // Ensure stack array is always initialized
+    if (currentProject.id && !currentProject.stack) {
+      currentProject.stack = []
+    }
+
     if (currentProject.id) {
       projects.push(currentProject)
     }
@@ -277,7 +282,7 @@ export function ProjectGallery() {
                 {/* Stack */}
                 <div className="mb-6">
                   <div className="flex flex-wrap gap-2">
-                    {project.stack.map((tech, techIndex) => (
+                    {project.stack && Array.isArray(project.stack) && project.stack.map((tech, techIndex) => (
                       <motion.span
                         key={tech}
                         initial={{ opacity: 0, scale: 0.8 }}
