@@ -3,10 +3,11 @@ import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { SkillCloud } from "@/components/SkillCloud";
 import { Timeline } from "@/components/Timeline";
+import { ProjectGallery } from "@/components/ProjectGallery";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-foreground">
       {/* Hero Section */}
       <Hero />
 
@@ -19,8 +20,11 @@ export default function Home() {
       {/* Timeline Section */}
       <Timeline />
 
+      {/* Projects Section */}
+      <ProjectGallery />
+
       {/* Demo Section */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 text-foreground">
             Design System Demo
@@ -29,7 +33,7 @@ export default function Home() {
           {/* Feature Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Color Tokens Demo */}
-            <div className="p-6 rounded-xl bg-card border border-border shadow-soft hover:shadow-medium transition-shadow">
+            <div className="p-6 rounded-xl bg-card border border-gray-200 dark:border-gray-700 shadow-soft hover:shadow-medium transition-shadow">
               <h3 className="text-xl font-semibold mb-4 text-card-foreground">Color Tokens</h3>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
@@ -48,7 +52,7 @@ export default function Home() {
             </div>
 
             {/* Typography Demo */}
-            <div className="p-6 rounded-xl bg-card border border-border shadow-soft hover:shadow-medium transition-shadow">
+            <div className="p-6 rounded-xl bg-card border border-gray-200 dark:border-gray-700 shadow-soft hover:shadow-medium transition-shadow">
               <h3 className="text-xl font-semibold mb-4 text-card-foreground">Fluid Typography</h3>
               <div className="space-y-2">
                 <p className="text-xs">Extra Small Text</p>
@@ -60,13 +64,13 @@ export default function Home() {
             </div>
 
             {/* Shadows Demo */}
-            <div className="p-6 rounded-xl bg-card border border-border shadow-soft hover:shadow-medium transition-shadow">
+            <div className="p-6 rounded-xl bg-card border border-gray-200 dark:border-gray-700 shadow-soft hover:shadow-medium transition-shadow">
               <h3 className="text-xl font-semibold mb-4 text-card-foreground">Multi-step Shadows</h3>
               <div className="space-y-3">
-                <div className="p-3 rounded bg-background shadow-xs">Extra Small</div>
-                <div className="p-3 rounded bg-background shadow-sm">Small</div>
-                <div className="p-3 rounded bg-background shadow-md">Medium</div>
-                <div className="p-3 rounded bg-background shadow-lg">Large</div>
+                <div className="p-3 rounded bg-white dark:bg-gray-800 shadow-xs">Extra Small</div>
+                <div className="p-3 rounded bg-white dark:bg-gray-800 shadow-sm">Small</div>
+                <div className="p-3 rounded bg-white dark:bg-gray-800 shadow-md">Medium</div>
+                <div className="p-3 rounded bg-white dark:bg-gray-800 shadow-lg">Large</div>
               </div>
             </div>
           </div>
@@ -85,7 +89,7 @@ export default function Home() {
           </div>
 
           {/* Original Next.js content */}
-          <div className="mt-16 pt-16 border-t border-border">
+          <div className="mt-16 pt-16 border-t border-gray-200 dark:border-gray-700">
             <div className="text-center">
               <Image
                 className="dark:invert mx-auto mb-8"
@@ -104,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border">
+      <footer className="border-t border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 py-8">
           <div className="flex gap-6 items-center justify-center flex-wrap">
             <a

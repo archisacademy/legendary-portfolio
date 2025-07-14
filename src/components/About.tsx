@@ -64,7 +64,7 @@ export function About({ language: propLanguage }: AboutProps) {
 
   if (loading) {
     return (
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="animate-pulse">
             <div className="h-8 bg-muted rounded w-1/3 mb-4"></div>
@@ -83,7 +83,7 @@ export function About({ language: propLanguage }: AboutProps) {
   if (!data) return null
 
   return (
-    <section className="py-20 bg-background" id="about">
+    <section className="py-20 bg-white dark:bg-gray-900" id="about">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -118,7 +118,7 @@ export function About({ language: propLanguage }: AboutProps) {
 
               {/* Stats */}
               <div className="grid grid-cols-2 gap-6 pt-6">
-                <div className="text-center p-6 rounded-xl bg-card border border-border shadow-soft">
+                <div className="text-center p-6 rounded-xl bg-card border border-gray-200 dark:border-gray-700 shadow-soft">
                   <div className="text-3xl font-bold text-primary-500 mb-2">
                     {data.experience}
                   </div>
@@ -126,7 +126,7 @@ export function About({ language: propLanguage }: AboutProps) {
                     Experience
                   </div>
                 </div>
-                <div className="text-center p-6 rounded-xl bg-card border border-border shadow-soft">
+                <div className="text-center p-6 rounded-xl bg-card border border-gray-200 dark:border-gray-700 shadow-soft">
                   <div className="text-3xl font-bold text-accent-500 mb-2">
                     {data.location}
                   </div>
@@ -147,7 +147,7 @@ export function About({ language: propLanguage }: AboutProps) {
                 {data.skills.map((skill, index) => (
                   <div 
                     key={index}
-                    className="group p-4 rounded-lg bg-card border border-border shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105"
+                    className="group p-4 rounded-lg bg-card border border-gray-200 dark:border-gray-700 shadow-soft hover:shadow-medium transition-all duration-300 hover:scale-105"
                   >
                     <div className="flex items-center justify-between">
                       <span className="text-foreground font-medium">
